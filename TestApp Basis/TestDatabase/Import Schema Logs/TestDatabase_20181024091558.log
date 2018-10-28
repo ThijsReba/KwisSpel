@@ -1,0 +1,84 @@
+24/10/2018 23:15:58	This log contains information about the import schema operation into project 'TestDatabase' on computer 'NICOREICHEN025F' by user 'nico'.
+24/10/2018 23:15:59	Import of database schema has started.
+24/10/2018 23:16:14	Gathering database credentials
+24/10/2018 23:16:14	Gathering database options
+24/10/2018 23:16:14	Gathering users
+24/10/2018 23:16:14	Gathering roles
+24/10/2018 23:16:14	Gathering application roles
+24/10/2018 23:16:14	Gathering role memberships
+24/10/2018 23:16:14	Gathering filegroups
+24/10/2018 23:16:14	Gathering full-text catalogs
+24/10/2018 23:16:14	Gathering assemblies
+24/10/2018 23:16:14	Gathering certificates
+24/10/2018 23:16:14	Gathering asymmetric keys
+24/10/2018 23:16:14	Gathering symmetric keys
+24/10/2018 23:16:14	Gathering encrypted symmetric keys
+24/10/2018 23:16:14	Gathering schemas
+24/10/2018 23:16:14	Gathering XML schema collections
+24/10/2018 23:16:14	Gathering user-defined data types
+24/10/2018 23:16:14	Gathering user-defined types
+24/10/2018 23:16:14	Gathering table types
+24/10/2018 23:16:14	Gathering unique keys for table types
+24/10/2018 23:16:14	Gathering primary keys for table types
+24/10/2018 23:16:14	Gathering indexes for table types
+24/10/2018 23:16:14	Gathering check constraints for table types
+24/10/2018 23:16:14	Gathering default constraints for table types
+24/10/2018 23:16:14	Gathering partition functions
+24/10/2018 23:16:14	Gathering partition schemes
+24/10/2018 23:17:04	Gathering functions
+24/10/2018 23:17:04	Gathering encrypted functions
+24/10/2018 23:17:04	Gathering aggregates
+24/10/2018 23:17:04	Gathering procedures
+24/10/2018 23:17:04	Gathering encrypted procedures
+24/10/2018 23:17:04	Gathering tables
+24/10/2018 23:17:04	Gathering primary keys
+24/10/2018 23:17:04	Gathering unique constraints
+24/10/2018 23:17:04	Gathering foreign keys
+24/10/2018 23:17:04	Gathering default constraints
+24/10/2018 23:17:04	Gathering check constraints
+24/10/2018 23:17:04	Gathering views
+24/10/2018 23:17:04	Gathering encrypted views
+24/10/2018 23:17:04	Gathering indexes
+24/10/2018 23:17:04	Gathering statistics
+24/10/2018 23:17:04	Gathering full-text index stoplists
+24/10/2018 23:17:04	Gathering search property lists
+24/10/2018 23:17:04	Gathering search properties
+24/10/2018 23:17:04	Gathering full-text indexes
+24/10/2018 23:17:04	Gathering column store indexes
+24/10/2018 23:17:04	Gathering spatial indexes
+24/10/2018 23:17:04	Gathering XML indexes
+24/10/2018 23:17:04	Gathering Selective XML indexes
+24/10/2018 23:17:04	Gathering encrypted triggers
+24/10/2018 23:17:06	Gathering triggers
+24/10/2018 23:17:06	Gathering encrypted and clr ddl triggers
+24/10/2018 23:17:06	Gathering ddl triggers
+24/10/2018 23:17:06	Gathering synonyms
+24/10/2018 23:17:06	Gathering defaults
+24/10/2018 23:17:06	Gathering data constraint uddt bindings
+24/10/2018 23:17:06	Gathering rules
+24/10/2018 23:17:06	Gathering data constraint uddt bindings
+24/10/2018 23:17:06	Gathering message types
+24/10/2018 23:17:06	Gathering queues
+24/10/2018 23:17:06	Gathering contracts
+24/10/2018 23:17:06	Gathering services
+24/10/2018 23:17:06	Gathering event notifications
+24/10/2018 23:17:06	Gathering remote service bindings
+24/10/2018 23:17:06	Gathering broker priorities
+24/10/2018 23:17:06	Gathering signatures
+24/10/2018 23:17:06	Gathering data compression options
+24/10/2018 23:17:06	Gathering sequence types
+24/10/2018 23:17:06	Gathering security policies
+24/10/2018 23:17:06	Gather column encryption keys
+24/10/2018 23:17:06	Gathering column master keys
+24/10/2018 23:17:06	Gathering external data sources
+24/10/2018 23:17:06	Gathering external file formats
+24/10/2018 23:17:06	Gathering external tables
+24/10/2018 23:17:06	Gathering extended properties
+24/10/2018 23:17:07	Gathering credentials
+24/10/2018 23:17:07	Gathering logins
+24/10/2018 23:17:07	Gathering server audits
+24/10/2018 23:17:07	Scanning project for duplicate elements
+24/10/2018 23:17:07	Finished duplicate element processing
+24/10/2018 23:17:07	Finished importing database.
+24/10/2018 23:17:07	A summary of the import was saved to the following location: C:\Users\nico\source\repos\WpfApp5\TestDatabase\Import Schema Logs\TestDatabase_20181024091558.log
+24/10/2018 23:17:07	Click Finish to continue...

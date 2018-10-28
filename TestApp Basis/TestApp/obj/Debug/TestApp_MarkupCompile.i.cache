@@ -1,0 +1,20 @@
+﻿TestApp
+
+
+winexe
+C#
+.cs
+\\Mac\Home\Downloads\TestApp Basis\TestApp\obj\Debug\
+TestApp
+none
+false
+DEBUG;TRACE
+\\Mac\Home\Downloads\TestApp Basis\TestApp\App.xaml
+10-344182551
+2-595452552
+39-1739278504
+1272125514812
+View\AddQuestionWindow.xaml;View\EditQuestionWindow.xaml;View\AddCategoryWindow.xaml;View\AddQuizWindow.xaml;View\CategoryManagementWindow.xaml;View\EditCategoryWindow.xaml;View\EditQuizWindow.xaml;View\QuestionManagementWindow.xaml;View\StartWindow.xaml;View\QuizManagementWindow.xaml;
+
+False
+

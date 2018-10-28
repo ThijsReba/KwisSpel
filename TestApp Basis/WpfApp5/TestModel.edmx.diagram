@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="af3ada273b2047fd98b1ecc0531ca11b" Name="Diagram1">
+        <EntityTypeShape EntityType="QuizDatabaseModel.Answer" Width="1.5" PointX="5.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuizDatabaseModel.Category" Width="1.5" PointX="1.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuizDatabaseModel.Question" Width="1.5" PointX="3.125" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuizDatabaseModel.Quiz" Width="1.5" PointX="3.125" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="QuizDatabaseModel.FK_QUESTION" ManuallyRouted="false" />
+        <AssociationConnector Association="QuizDatabaseModel.fk_category" ManuallyRouted="false" />
+        <AssociationConnector Association="QuizDatabaseModel.Quiz_Question" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

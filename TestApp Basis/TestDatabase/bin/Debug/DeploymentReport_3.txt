@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Answer] (Table)
+       [dbo].[Category] (Table)
+       [dbo].[Question] (Table)
+       [dbo].[Quiz] (Table)
+       [dbo].[Quiz_Question] (Table)
+       Default Constraint: unnamed constraint on [dbo].[Answer] (Default Constraint)
+       [dbo].[FK_QUESTION] (Foreign Key)
+       [dbo].[fk_category] (Foreign Key)
+       [dbo].[FK_Question_Quiz] (Foreign Key)
+       [dbo].[FK_Quiz_Question] (Foreign Key)
+
+** Supporting actions

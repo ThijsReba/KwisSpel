@@ -1,0 +1,24 @@
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\bin\Debug\TestDatabase.dacpac
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\bin\Debug\TestDatabase.dll
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\bin\Debug\TestDatabase.pdb
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\obj\Debug\Model.xml
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\obj\Debug\refactor.xml
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\obj\Debug\postdeploy.sql
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\obj\Debug\predeploy.sql
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\obj\Debug\TestDatabase.dll
+C:\Users\nico\source\repos\WpfApp5\TestDatabase\obj\Debug\TestDatabase.pdb
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\bin\Debug\TestDatabase.dacpac
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\bin\Debug\TestDatabase.dll
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\bin\Debug\TestDatabase.pdb
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\obj\Debug\Model.xml
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\obj\Debug\refactor.xml
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\obj\Debug\postdeploy.sql
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\obj\Debug\predeploy.sql
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\obj\Debug\TestDatabase.dll
+C:\Users\nico\source\repos\TestApp Basis\TestDatabase\obj\Debug\TestDatabase.pdb
+\\Mac\Home\Downloads\TestApp Basis\TestDatabase\bin\Debug\TestDatabase.dacpac
+\\Mac\Home\Downloads\TestApp Basis\TestDatabase\bin\Debug\TestDatabase.dll
+\\Mac\Home\Downloads\TestApp Basis\TestDatabase\bin\Debug\TestDatabase.pdb
+\\Mac\Home\Downloads\TestApp Basis\TestDatabase\obj\Debug\TestDatabase.sqlprojAssemblyReference.cache
+\\Mac\Home\Downloads\TestApp Basis\TestDatabase\obj\Debug\TestDatabase.dll
+\\Mac\Home\Downloads\TestApp Basis\TestDatabase\obj\Debug\TestDatabase.pdb

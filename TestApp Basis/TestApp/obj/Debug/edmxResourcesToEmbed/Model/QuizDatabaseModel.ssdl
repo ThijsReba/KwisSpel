@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="AnswerId" />
+    </Key>
+    <Property Name="AnswerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="QuestionId" Type="int" Nullable="false" />
+    <Property Name="IsCorrect" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryName" />
+    </Key>
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="QuestionId" />
+    </Key>
+    <Property Name="QuestionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Quiz">
+    <Key>
+      <PropertyRef Name="QuizId" />
+    </Key>
+    <Property Name="QuizId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Quiz_Question">
+    <Key>
+      <PropertyRef Name="QuizId" />
+      <PropertyRef Name="QuestionId" />
+    </Key>
+    <Property Name="QuizId" Type="int" Nullable="false" />
+    <Property Name="QuestionId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryName" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="CategoryName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUESTION">
+    <End Role="Question" Type="Self.Question" Multiplicity="1" />
+    <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="QuestionId" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Question_Quiz">
+    <End Role="Quiz" Type="Self.Quiz" Multiplicity="1" />
+    <End Role="Quiz_Question" Type="Self.Quiz_Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Quiz">
+        <PropertyRef Name="QuizId" />
+      </Principal>
+      <Dependent Role="Quiz_Question">
+        <PropertyRef Name="QuizId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Quiz_Question">
+    <End Role="Question" Type="Self.Question" Multiplicity="1" />
+    <End Role="Quiz_Question" Type="Self.Quiz_Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="QuestionId" />
+      </Principal>
+      <Dependent Role="Quiz_Question">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuizDatabaseModelStoreContainer">
+    <EntitySet Name="Answer" EntityType="Self.Answer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Question" EntityType="Self.Question" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Quiz" EntityType="Self.Quiz" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Quiz_Question" EntityType="Self.Quiz_Question" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_category" Association="Self.fk_category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Question" EntitySet="Question" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUESTION" Association="Self.FK_QUESTION">
+      <End Role="Question" EntitySet="Question" />
+      <End Role="Answer" EntitySet="Answer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Question_Quiz" Association="Self.FK_Question_Quiz">
+      <End Role="Quiz" EntitySet="Quiz" />
+      <End Role="Quiz_Question" EntitySet="Quiz_Question" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Quiz_Question" Association="Self.FK_Quiz_Question">
+      <End Role="Question" EntitySet="Question" />
+      <End Role="Quiz_Question" EntitySet="Quiz_Question" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

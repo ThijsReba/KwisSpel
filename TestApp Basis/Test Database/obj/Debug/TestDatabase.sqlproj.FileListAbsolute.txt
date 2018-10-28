@@ -1,0 +1,5 @@
+C:\Users\nico\source\repos\WpfApp5\Test Database\bin\Debug\TestDatabase.dacpac
+C:\Users\nico\source\repos\WpfApp5\Test Database\bin\Debug\Test_Database.dll
+C:\Users\nico\source\repos\WpfApp5\Test Database\bin\Debug\Test_Database.pdb
+C:\Users\nico\source\repos\WpfApp5\Test Database\obj\Debug\Test_Database.dll
+C:\Users\nico\source\repos\WpfApp5\Test Database\obj\Debug\Test_Database.pdb

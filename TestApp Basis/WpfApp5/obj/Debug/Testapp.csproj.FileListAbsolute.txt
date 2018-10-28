@@ -1,0 +1,7 @@
+C:\Users\nico\source\repos\WpfApp5\WpfApp5\obj\Debug\Testapp.csprojAssemblyReference.cache
+C:\Users\nico\source\repos\WpfApp5\WpfApp5\obj\Debug\MainWindow.g.cs
+C:\Users\nico\source\repos\WpfApp5\WpfApp5\obj\Debug\App.g.cs
+C:\Users\nico\source\repos\WpfApp5\WpfApp5\obj\Debug\WpfApp5_Content.g.cs
+C:\Users\nico\source\repos\WpfApp5\WpfApp5\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\nico\source\repos\WpfApp5\WpfApp5\obj\Debug\WpfApp5_MarkupCompile.cache
+C:\Users\nico\source\repos\WpfApp5\WpfApp5\obj\Debug\WpfApp5_MarkupCompile.lref

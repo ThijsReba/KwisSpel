@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="AnswerId" />
+    </Key>
+    <Property Name="AnswerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="QuestionId" Type="Int32" Nullable="false" />
+    <Property Name="IsCorrect" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Question" Relationship="Self.FK_QUESTION" FromRole="Answer" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Questions" Relationship="Self.fk_category" FromRole="Category" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="QuestionId" />
+    </Key>
+    <Property Name="QuestionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Answers" Relationship="Self.FK_QUESTION" FromRole="Question" ToRole="Answer" />
+    <NavigationProperty Name="Category" Relationship="Self.fk_category" FromRole="Question" ToRole="Category" />
+    <NavigationProperty Name="Quizs" Relationship="Self.Quiz_Question" FromRole="Question" ToRole="Quiz" />
+  </EntityType>
+  <EntityType Name="Quiz">
+    <Key>
+      <PropertyRef Name="QuizId" />
+    </Key>
+    <Property Name="QuizId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Questions" Relationship="Self.Quiz_Question" FromRole="Quiz" ToRole="Question" />
+  </EntityType>
+  <Association Name="FK_QUESTION">
+    <End Role="Question" Type="Self.Question" Multiplicity="1" />
+    <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="QuestionId" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Quiz_Question">
+    <End Role="Quiz" Type="Self.Quiz" Multiplicity="*" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="QuizDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Answers" EntityType="Self.Answer" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Questions" EntityType="Self.Question" />
+    <EntitySet Name="Quizs" EntityType="Self.Quiz" />
+    <AssociationSet Name="FK_QUESTION" Association="Self.FK_QUESTION">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Answer" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="fk_category" Association="Self.fk_category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="Quiz_Question" Association="Self.Quiz_Question">
+      <End Role="Quiz" EntitySet="Quizs" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
